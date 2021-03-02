@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace getting_input
+namespace getting_input_2
 {
     public partial class MainForm : Form
     {
@@ -17,8 +17,10 @@ namespace getting_input
             InitializeComponent();
         }
 
-        
-
-       
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string name = txtInput.Text;
+            lblMessage.Text = "Greetings " + name;
+        }
     }
 }
